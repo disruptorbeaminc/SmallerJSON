@@ -1,0 +1,9 @@
+{
+  "name": "com.disruptorbeam.smallerjson",
+  "version": "1.0.0",
+  "displayName": "SmallerJSON",
+  "description": "A memory-optimized mostly-drop-in replacement for MiniJSON",
+  "author": {
+    "name": "Zach Kamsler (Disruptor Beam)"
+  }
+}
