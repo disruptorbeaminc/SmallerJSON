@@ -1,0 +1,14 @@
+{
+    "name": "SmallerJSON.Tests",
+    "references": [
+        "SmallerJSON"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
