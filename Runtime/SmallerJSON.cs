@@ -634,10 +634,10 @@ namespace SmallerJSON {
          
          private static void SerializeString(string str, StringBuilder builder) {
             builder.Append('\"');
-            
-            char[] charArray = str.ToCharArray();
-            for (int i=0; i<charArray.Length; i++) {
-               char c = charArray[i];
+
+            int strLength = str.Length;
+            for (int i = 0; i < strLength; i++) {
+               char c = str[i];
                switch (c) {
                case '"':
                   builder.Append("\\\"");
@@ -661,13 +661,7 @@ namespace SmallerJSON {
                   builder.Append("\\t");
                   break;
                default:
-                  int codepoint = Convert.ToInt32(c);
-                  if ((codepoint >= 32) && (codepoint <= 126)) {
-                     builder.Append(c);
-                  } else {
-                     builder.Append("\\u");
-                     builder.Append(codepoint.ToString("x4"));
-                  }
+                  builder.Append(c);
                   break;
                }
             }
